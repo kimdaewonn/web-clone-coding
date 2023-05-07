@@ -13,5 +13,93 @@ body {
     font-family: "Nanum Gothic", sans-serif;
     line-height: 1;
     font-weight: 400;
+    color: #333;
     overflow-x: hidden;
+    font-size: 1.6rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.header-title {
+    padding: 2rem 0 2.5rem 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.header-title .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo img {
+    width: 23.4rem;
+    height: 3.4rem;
+}
+
+.sm-nav {
+    display: flex;
+    gap: 2rem;
+    padding-top: 0.7rem;
+}
+
+.sm-nav li {
+    font-size: 1.4rem;
+    position: relative;
+}
+
+/* .sm-nav li a {
+    padding-left: 20px;
+} */
+.sm-nav li:first-child::after {
+    background: none;
+}
+.sm-nav li::after {
+    content: "";
+    position: absolute;
+    top: 6%;
+    left: -15%;
+    width: 0.1rem;
+    height: 1.1rem;
+    background: #a4a4a4;
+}
+
+.sm-nav span {
+    position: absolute;
+    top: 6%;
+    right: -35%;
+    background: url(../img/move.png) no-repeat center center/ 1.2rem 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb > li {
+    flex-grow: 1;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 1.7rem 0;
+    font-weight: 700;
+    border-left: 1px solid #d9d9d9;
+}
+
+.gnb > li:last-child {
+    border-right: 1px solid #d9d9d9;
 }
