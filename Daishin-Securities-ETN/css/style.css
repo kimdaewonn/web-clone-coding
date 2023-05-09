@@ -99,6 +99,15 @@ a {
     padding: 1.7rem 0;
     font-weight: 700;
     border-left: 1px solid #d9d9d9;
+    cursor: pointer;
+}
+
+.gnb > li:hover a {
+    color: #005bac;
+}
+.gnb > li:hover {
+    /* border-bottom: 1px solid #005bac; */
+    box-shadow: 0px 8px 0 -2px #005bac;
 }
 
 .gnb > li:last-child {
@@ -347,6 +356,7 @@ a {
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
     line-height: 1.4;
+    font-weight: 800;
 }
 .pdt-content p {
     font-size: 1.3rem;
@@ -404,6 +414,10 @@ a {
     INTRODUCE SECTION
 ********************/
 
+.introduce-section {
+    margin-bottom: 8rem;
+}
+
 .introduce-title-wrap {
     text-align: center;
     margin-bottom: 3rem;
@@ -426,13 +440,13 @@ a {
     padding: 4.5rem 3rem;
     border: 1px solid #d9d9d9;
     position: relative;
-    cursor: pointer;
+    transition: all 0.3s;
 }
 
-.gery {
+.grey {
+    cursor: pointer;
     background: #f8fafc;
 }
-
 .sum {
     grid-column: 1/3;
 }
@@ -440,12 +454,13 @@ a {
 .card h3 {
     font-size: 2.3rem;
     margin-bottom: 1.5rem;
+    font-weight: 800;
 }
 .card p {
     font-size: 1.3rem;
     line-height: 1.4;
 }
-.card .card-icon {
+.card-icon1 {
     position: absolute;
     top: 68%;
     left: 10%;
@@ -454,12 +469,119 @@ a {
     width: 4.9rem;
     height: 6.1rem;
 }
+.card-icon2 {
+    position: absolute;
+    top: 68%;
+    left: 10%;
+    background: url(../img/mainEtnInfo02B.png) no-repeat center center;
+    background-size: auto;
+    width: 6.7rem;
+    height: 6.7rem;
+}
+.card-icon3 {
+    position: absolute;
+    top: 68%;
+    left: 10%;
+    background: url(../img/mainEtnInfo03B.png) no-repeat center center;
+    background-size: auto;
+    width: 6.7rem;
+    height: 6.3rem;
+}
 .plus {
     position: absolute;
     background: url(../img/morePlusB.png) no-repeat center center/1.9rem auto;
     width: 4.6rem;
     height: 4.6rem;
-    right: 6%;
+    right: 10%;
     bottom: 9%;
     transition: all 0.3s;
+}
+
+.border-blue:hover {
+    border: 1px solid #005bac;
+}
+.card:hover .plus {
+    border: 1px solid #005bac;
+    background: #005bac url(../img/morePlusW.png) no-repeat center center/1.9rem
+        auto;
+}
+
+.notice-title {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice-title h3 {
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+.notice-plus {
+    background: url(../img/morePlusB.png) no-repeat center center/1.9rem auto;
+    width: 4.6rem;
+    height: 4.6rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.notice-plus:hover {
+    border: 1px solid #005bac;
+    background: #005bac url(../img/morePlusW.png) no-repeat center center/1.9rem
+        auto;
+}
+.p3 {
+    padding: 3rem;
+}
+
+.sum-desc {
+    font-weight: 700;
+    line-height: 1.6;
+    cursor: pointer;
+}
+.sum-desc:hover {
+    text-decoration: underline;
+}
+
+.card-date {
+    font-weight: normal;
+    position: absolute;
+    bottom: 10%;
+    left: 1%;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.card-box-wrap {
+    display: flex;
+    letter-spacing: -1px;
+}
+
+.card-box {
+    flex-grow: 1;
+    height: 20rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.card-box:first-child {
+    border-right: 1px solid #e5e5e5;
+}
+.card-box:nth-child(2) {
+    margin-left: 2rem;
+}
+
+.sky {
+    background: #c4daf1;
+    cursor: pointer;
+}
+.present {
+    margin-top: 5.5rem;
+    display: inline-block;
+}
+
+/*******************
+    FOOTER SECTION
+********************/
+.footer {
+    padding-bottom: 8rem;
+    background: #4c4948;
 }
