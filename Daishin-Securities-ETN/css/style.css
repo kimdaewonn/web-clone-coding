@@ -55,7 +55,9 @@ a {
     width: 23.4rem;
     height: 3.4rem;
 }
-
+.menu {
+    display: none;
+}
 .sm-nav {
     display: flex;
     gap: 2rem;
