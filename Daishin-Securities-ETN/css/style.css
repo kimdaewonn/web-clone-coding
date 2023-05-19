@@ -90,6 +90,12 @@ a {
     width: 1.2rem;
     height: 1.2rem;
 }
+.mobile-gnb {
+    display: none;
+}
+.dark {
+    display: none;
+}
 
 .gnb {
     display: flex;
@@ -155,20 +161,18 @@ a {
     top: 0;
     right: -134px;
     width: 50.9rem;
-    height: 37.4rem;
 }
 .hero-img3 .img2 {
     position: absolute;
     top: 73px;
     right: 26px;
     width: 45rem;
-    height: 25.7rem;
 }
 
 .dots-position {
     position: absolute;
     left: 50%;
-    bottom: 30px;
+    bottom: 7%;
     transform: translateX(-50%);
 }
 .dots {
@@ -182,8 +186,8 @@ a {
 }
 
 .dot {
-    width: 1rem;
-    height: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
     border: 1px solid #fff;
     border-radius: 50%;
 }
@@ -314,9 +318,10 @@ a {
     margin-bottom: 6.5rem;
     background: #f3f3f5;
     text-align: center;
+}
+.pdt-section .container {
     position: relative;
 }
-
 .pdt-title-wrap {
     margin-bottom: 6rem;
 }
@@ -347,7 +352,6 @@ a {
     top: -20px;
     right: 0;
     width: 493px;
-    height: 290px;
     padding: 40px 40px 25px;
     background: linear-gradient(to top right, #03afb9, #188cc7, #1070ba);
     color: #fff;
@@ -382,6 +386,10 @@ a {
     border: 1px solid #4c4948;
 }
 
+.pdt-section .dots-position {
+    bottom: -8%;
+}
+
 .pdt-dot-active {
     background: #005bac;
     border: 1px solid #005bac;
@@ -402,8 +410,8 @@ a {
 .pdt-moving-btn .next-btn {
     position: absolute;
     top: 50%;
-    right: 20%;
-    transform: translateX(-250%);
+    right: 0;
+    transform: translateX(250%);
     background: rgba(0, 0, 0, 0.05) url(../img/mainEtnPdtCtrR.gif) no-repeat
         center center;
     background-size: auto;
@@ -597,6 +605,9 @@ a {
     display: flex;
     padding: 2rem 0;
     gap: 1rem;
+}
+.mobile-fmenu {
+    display: none;
 }
 .f-menu li {
     position: relative;

@@ -1,5 +1,15 @@
 /* 1070px */
 @media (max-width: 67em) {
+    /* html {
+        9px / 16px 
+        font-size: 56.25%;
+    } */
+    /*******************
+         HEADER SECTION
+    ********************/
+    .header-title .container {
+        width: 90%;
+    }
     .gnb {
         display: none;
     }
@@ -31,7 +41,6 @@
         box-shadow: -4px -1px 2px rgba(0, 0, 0, 0.1);
         z-index: 100;
         background: #fff;
-        display: none;
     }
     .dark {
         position: fixed;
@@ -41,7 +50,6 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         z-index: 99;
-        display: none;
     }
     .mobile-gnb h2 {
         padding: 1.2rem 2rem 1rem;
@@ -100,5 +108,309 @@
     }
     .nav-open .dark {
         display: block;
+    }
+
+    /*******************
+        INTRODUCE SECTION
+    ********************/
+    .hero-moving-btn {
+        display: none;
+    }
+    .hero-section .container {
+        width: 90%;
+    }
+    .hero-img3 .img2 {
+        width: 29.4rem;
+        top: 132px;
+        right: 66px;
+    }
+    .hero-img3 .img3 {
+        width: auto;
+    }
+    .hero-title {
+        font-size: 3.2rem;
+    }
+    .hero-sub-title {
+        font-size: 1.6rem;
+    }
+    .gift {
+        font-size: 1.3rem;
+    }
+
+    /*******************
+         QUICK SECTION
+    ********************/
+    .quick-menu-section .container {
+        flex-wrap: wrap;
+        gap: 0;
+        max-width: 107rem;
+    }
+    .quick-box {
+        padding: 2rem;
+        width: 50%;
+        border-bottom: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+    }
+
+    .quick-desc br {
+        display: none;
+    }
+
+    .quick-box::after {
+        display: none;
+    }
+    /*******************
+        PDT SECTION
+    ********************/
+    .pdt-section {
+        margin-bottom: 3.5rem;
+        padding-bottom: 11%;
+    }
+
+    .pdt-section .container {
+        width: 90%;
+    }
+    .pdt-title {
+        font-size: 2.3rem;
+    }
+    .pdt-title-wrap {
+        margin: 0;
+    }
+    .pdt-title-wrap p {
+        font-size: 1.3rem;
+    }
+    .pdt-img {
+        position: static;
+        width: 79%;
+    }
+    .transform-pdt {
+        height: auto;
+        position: relative;
+        max-width: 100%;
+    }
+
+    .pdt-tr-li {
+        position: static;
+    }
+
+    .pdt-content {
+        position: static;
+        width: 79%;
+        padding: 2.5rem 4rem 3.5rem;
+        margin-top: -0.3rem;
+        display: inline-block;
+    }
+    .pdt-content h3 {
+        font-size: 2rem;
+    }
+    .pdt-content br {
+        display: none;
+    }
+    .pdt-content p:nth-child(2) {
+        margin-bottom: 2.5rem;
+    }
+    .pdt-moving-btn .prev-btn {
+        width: 4rem;
+        height: 8rem;
+        background: url(../img/mainEtnPdtCtrLBig.png) no-repeat center/25px auto;
+        top: 54%;
+        transform: translateX(0%);
+    }
+    .pdt-moving-btn .next-btn {
+        width: 4rem;
+        height: 8rem;
+        background: url(../img/mainEtnPdtCtrRBig.png) no-repeat center/25px auto;
+        top: 54%;
+        transform: translateX(0%);
+    }
+    /*******************
+        INTRODUCE SECTION
+    ********************/
+    .introduce-section .container {
+        width: 90%;
+    }
+    .introduce-title-wrap h2 {
+        font-size: 2.1rem;
+        text-align: left;
+    }
+    .introduce-title-wrap p {
+        display: none;
+    }
+    .introduce-cards {
+        row-gap: 1rem;
+    }
+    .grey {
+        grid-column: 1/-1;
+        padding: 2rem;
+        height: auto;
+    }
+    .grey h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    .grey br {
+        display: none;
+    }
+    .grey p {
+        font-size: 1.4rem;
+    }
+    .grey .plus {
+        display: none;
+    }
+    .card-icon1 {
+        top: 35%;
+        left: auto;
+        right: 4.5%;
+        background-size: 2.5rem 3.5rem;
+        width: 2.5rem;
+        height: 3.5rem;
+    }
+    .card-icon2 {
+        top: 35%;
+        left: auto;
+        right: 4.5%;
+        background-size: 2.5rem 3.5rem;
+        width: 2.5rem;
+        height: 3.5rem;
+    }
+    .card-icon3 {
+        top: 35%;
+        left: auto;
+        right: 4.5%;
+        background-size: 2.5rem 3.5rem;
+        width: 2.5rem;
+        height: 3.5rem;
+    }
+    .grey:last-child {
+        margin-bottom: 3rem;
+    }
+    .sum {
+        grid-column: 1/-1;
+        padding: 0;
+        border: 0;
+        margin-bottom: 2rem;
+    }
+    .notice-title h3 {
+        font-size: 2.1rem;
+    }
+    .notice-title {
+        margin-top: 3rem;
+        margin-bottom: 0;
+        align-items: center;
+    }
+    .card-box-wrap {
+        display: block;
+    }
+    .sum-desc br {
+        display: none;
+    }
+    .card-date {
+        position: static;
+        margin-top: 2rem;
+    }
+    .card-box {
+        height: auto;
+        padding: 2rem;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .card-box:first-child {
+        border-right: 0;
+        border-top: 2px solid #ccc;
+    }
+    .card-box:nth-child(2) {
+        margin: 0;
+    }
+    .card {
+        height: auto;
+    }
+    .sky {
+        grid-column: 1/-1;
+    }
+    .sky h3 {
+        font-size: 2.1rem;
+    }
+    .sky .present {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5.5rem;
+    }
+    /*******************
+        INTRODUCE SECTION
+    ********************/
+
+    .footer .top {
+        display: none;
+    }
+    .footer .container {
+        width: 90%;
+        align-items: center;
+    }
+    .company .container {
+        flex-direction: column;
+    }
+    .mobile-fmenu {
+        display: flex;
+    }
+    .company h2 {
+        margin: 0;
+    }
+    .f-menu li a {
+        font-size: 1.4rem;
+    }
+    .footer-p {
+        text-align: center;
+    }
+    .company p {
+        line-height: 1.6;
+    }
+}
+/* 640px */
+@media (max-width: 40em) {
+    html {
+        /* 9px / 16px  */
+        font-size: 56.25%;
+    }
+    .hero-img3 .img2 {
+        width: 25rem;
+    }
+}
+
+/* 540px */
+@media (max-width: 34em) {
+    .hero-img3 .img2 {
+        top: 162px;
+        right: 16px;
+    }
+}
+/* 460px */
+@media (max-width: 29em) {
+    .hero-img3 .img1 {
+        top: 139px;
+        right: -96px;
+        width: 30rem;
+    }
+    .gift {
+        display: none;
+    }
+    .hero-img3 .img2 {
+        top: 165px;
+        right: auto;
+        left: 100px;
+    }
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    .quick-box {
+        width: 100%;
+        gap: 4rem;
+        padding-left: 4rem;
+    }
+    .quick-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .quick-desc {
+        font-size: 1.4rem;
+        line-height: 1.6;
     }
 }
