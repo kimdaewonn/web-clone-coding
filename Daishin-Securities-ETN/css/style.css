@@ -3,10 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+html,
+body {
+    overflow-x: hidden;
+}
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
 }
 
 body {
@@ -32,7 +35,32 @@ a {
     max-width: 100rem;
     margin: 0 auto;
 }
-
+.topBtn {
+    position: fixed;
+    bottom: 258px;
+    right: 50%;
+    width: 6rem;
+    height: 6rem;
+    padding-top: 3rem;
+    background: rgba(255, 255, 255, 0.7) url(../img/top.png) no-repeat center
+        13px/15px auto;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    z-index: 110;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-right: -60rem;
+    display: none;
+    transition: all 0.3s;
+}
+.topBtn:hover {
+    transform: scale(1.1);
+}
+.topBtn.show {
+    display: block;
+}
 /*******************
     HEADER SECTION
 ********************/
@@ -58,6 +86,7 @@ a {
 .menu {
     display: none;
 }
+
 .sm-nav {
     display: flex;
     gap: 2rem;
@@ -90,8 +119,12 @@ a {
     width: 1.2rem;
     height: 1.2rem;
 }
+
 .mobile-gnb {
-    display: none;
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
 }
 .dark {
     display: none;
@@ -109,6 +142,7 @@ a {
     font-weight: 700;
     border-left: 1px solid #d9d9d9;
     cursor: pointer;
+    position: relative;
 }
 
 .gnb > li:hover a {
@@ -121,6 +155,36 @@ a {
 
 .gnb > li:last-child {
     border-right: 1px solid #d9d9d9;
+}
+.gnb > li > ul {
+    position: absolute;
+    top: 53px;
+    font-size: 1.4rem;
+    font-weight: normal;
+    z-index: 100;
+    overflow: hidden;
+    width: 100%;
+}
+.gnb > li > ul::before {
+    content: "";
+    width: 1px;
+    height: 300px;
+    background: #d9d9d9;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gnb > li > ul::after {
+    content: "";
+    width: 1px;
+    height: 300px;
+    background: #d9d9d9;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.gnb > li > ul > li {
+    margin-top: 1rem;
 }
 
 /*******************
@@ -645,6 +709,10 @@ a {
     cursor: pointer;
     position: relative;
 }
+
+.family ul.on {
+    display: block;
+}
 .family ul {
     position: absolute;
     border: 1px solid #a3a1a2;
@@ -675,6 +743,9 @@ a {
     width: 12px;
     height: 8px;
     cursor: pointer;
+}
+.family span.rotate {
+    transform: rotate(180deg);
 }
 
 .company {
