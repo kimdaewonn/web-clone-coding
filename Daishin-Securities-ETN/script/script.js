@@ -1,13 +1,14 @@
 // navigation
-$(function () {
-    $(".gnb li").on("mouseenter", function () {
-        $(".gnb li ul").css("background", "#fff");
-        $(".gnb li ul").css("height", "300px");
-        $(".gnb li ul").slideDown(); // 2초에 걸쳐서 진행
-    });
-    $(".gnb li").on("mouseleave", function () {
-        $(".gnb li ul").slideUp(); // 2초에 걸쳐서 진행
-    });
+$(".gnb").on("mouseenter", function () {
+    $(".gnb li ul").css("background", "#fff");
+    $(".gnb li ul").css("height", "300px");
+    $(".gnb_bg").css("height", "300px");
+    $(".gnb_bg").slideDown();
+    $(".gnb li ul").slideDown(); // 2초에 걸쳐서 진행
+});
+$(".gnb li ul").on("mouseleave", function () {
+    $(".gnb li ul").slideUp(); // 2초에 걸쳐서 진행
+    $(".gnb_bg").slideUp(); // 2초에 걸쳐서 진행
 });
 
 // mobile-navigation

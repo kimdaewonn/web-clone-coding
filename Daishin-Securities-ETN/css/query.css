@@ -7,11 +7,15 @@
     /*******************
          HEADER SECTION
     ********************/
+
     .header {
         position: relative;
     }
     .header-title .container {
         width: 90%;
+    }
+    .nav {
+        position: static;
     }
     .gnb {
         display: none;
