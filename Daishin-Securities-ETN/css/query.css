@@ -1,3 +1,24 @@
+/* 1753px */
+@media (max-width: 110em) {
+    /* .hero-img-box {
+     transform: translateX(-1000px);
+    } */
+    .hero-img3 .img2 {
+        width: 29rem;
+        top: 132px;
+        right: 66px;
+    }
+    .hero-img3 .img1 {
+        width: auto;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+}
+
 /* 1070px */
 @media (max-width: 67em) {
     /* html {
