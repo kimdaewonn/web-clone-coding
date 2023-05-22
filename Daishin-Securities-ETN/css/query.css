@@ -41,6 +41,9 @@
     .gnb {
         display: none;
     }
+    .gnb_bg {
+        display: none !important;
+    }
     .sm-nav {
         display: none;
     }
