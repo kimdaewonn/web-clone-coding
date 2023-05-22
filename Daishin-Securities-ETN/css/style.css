@@ -223,17 +223,20 @@ a {
     position: relative;
     /* height: 37.5rem; */
 }
+.hero03-inner {
+    position: relative;
+    width: 100%;
+}
 
 .hero03-text-box {
     position: absolute;
     top: 55px;
-    left: 0;
+    left: 20px;
 }
 .hero-img-box {
     position: absolute;
     top: 0;
-    right: 0;
-    transform: translateX(-900px);
+    left: 1000px;
 }
 
 .hero-sub-title {
@@ -326,7 +329,7 @@ a {
 .swiper-button-prev {
     position: absolute;
     top: 50%;
-    transform: translate(350px, -50%);
+    transform: translateX(380px);
     background: rgba(0, 0, 0, 0.05) url(../img/mainVisualCtrL.png) no-repeat
         center center;
     width: 5.4rem !important;
@@ -340,7 +343,7 @@ a {
     position: absolute;
     top: 50%;
     right: 18%;
-    transform: translate(-350px, -50%);
+    transform: translateX(-380px);
     background: rgba(0, 0, 0, 0.05) url(../img/mainVisualCtrR.png) no-repeat
         center center;
     width: 5.4rem !important;
@@ -391,10 +394,14 @@ a {
     bottom: var(--swiper-pagination-bottom, 20px) !important;
 }
 
-/* pdt */
 .swiper .swiper-wrapper {
-    height: 29.9rem;
+    height: 37.5rem;
+    max-width: 100rem;
+    margin: 0 auto;
 }
+
+/* pdt */
+
 .pdt-moving-btn .swiper-button-prev {
     position: absolute;
     top: 50%;
@@ -406,6 +413,8 @@ a {
     height: 2.4rem;
     cursor: pointer;
     transition: all 0.5s;
+    /* z-index: 100;
+    opacity: 1; */
 }
 /*******************
     QUICK SECTION

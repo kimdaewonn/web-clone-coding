@@ -87,8 +87,8 @@ var swiper = new Swiper(".pdt-swiper", {
     spaceBetween: 30,
     effect: "fade",
     navigation: {
-        nextEl: ".pdt-moving-btn .next-btn",
-        prevEl: ".pdt-moving-btn .prev-btn",
+        nextEl: ".pdt-moving-btn .swiper-button-next",
+        prevEl: ".pdt-moving-btn .swiper-button-prev",
     },
     pagination: {
         el: ".swiper-pagination",
