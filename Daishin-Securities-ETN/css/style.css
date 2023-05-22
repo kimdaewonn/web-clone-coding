@@ -298,9 +298,9 @@ a {
     opacity: 0;
 } */
 
-.hero-section:hover .prev-btn {
+/* .hero-section:hover .prev-btn {
     opacity: 1;
-}
+} */
 /* .hero-moving-btn .next-btn {
     position: absolute;
     top: 50%;
@@ -323,39 +323,43 @@ a {
 
 /* nav */
 
-.swiper-button-prev:after {
+.swiper-button-prev {
     position: absolute;
     top: 50%;
     transform: translate(350px, -50%);
     background: rgba(0, 0, 0, 0.05) url(../img/mainVisualCtrL.png) no-repeat
         center center;
-    width: 5.4rem;
-    height: 5.4rem;
+    width: 5.4rem !important;
+    height: 5.4rem !important;
     border-radius: 50%;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.3s;
     opacity: 0;
 }
-.hero-section:hover .swiper-button-prev:after {
-    opacity: 1;
-}
-
-.swiper-button-next:after {
+.swiper-button-next {
     position: absolute;
     top: 50%;
     right: 18%;
-    transform: translate(-90%, -50%);
+    transform: translate(-350px, -50%);
     background: rgba(0, 0, 0, 0.05) url(../img/mainVisualCtrR.png) no-repeat
         center center;
-    width: 5.4rem;
-    height: 5.4rem;
+    width: 5.4rem !important;
+    height: 5.4rem !important;
     border-radius: 50%;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.3s;
     opacity: 0;
 }
-.hero-section:hover .swiper-button-next:after {
+.hero-section:hover .swiper-button-prev {
     opacity: 1;
+}
+.hero-section:hover .swiper-button-next {
+    opacity: 1;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    display: none;
 }
 
 /* pagination */
