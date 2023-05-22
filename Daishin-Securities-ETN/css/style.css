@@ -392,7 +392,9 @@ a {
 }
 
 /* pdt */
-
+.swiper .swiper-wrapper {
+    height: 29.9rem;
+}
 /*******************
     QUICK SECTION
 ********************/
