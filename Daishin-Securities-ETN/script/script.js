@@ -64,7 +64,7 @@ window.addEventListener("scroll", () => {
 });
 
 // swiper
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".hero-swiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -78,5 +78,20 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+});
+
+// fade
+
+var swiper = new Swiper(".pdt-swiper", {
+    spaceBetween: 30,
+    effect: "fade",
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
 });
