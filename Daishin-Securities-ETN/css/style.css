@@ -395,6 +395,18 @@ a {
 .swiper .swiper-wrapper {
     height: 29.9rem;
 }
+.pdt-moving-btn .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-250%);
+    background: rgba(0, 0, 0, 0.05) url(../img/mainEtnPdtCtrL.gif) no-repeat
+        center center;
+    background-size: auto;
+    width: 1.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
 /*******************
     QUICK SECTION
 ********************/
@@ -563,7 +575,7 @@ a {
     border: 1px solid #005bac;
 }
 
-.pdt-moving-btn .prev-btn {
+/* .pdt-moving-btn .prev-btn {
     position: absolute;
     top: 50%;
     transform: translateX(-250%);
@@ -574,7 +586,7 @@ a {
     height: 2.4rem;
     cursor: pointer;
     transition: all 0.5s;
-}
+} */
 .pdt-moving-btn .next-btn {
     position: absolute;
     top: 50%;
