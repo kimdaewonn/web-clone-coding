@@ -64,9 +64,10 @@ window.addEventListener("scroll", () => {
 });
 
 // swiper
-var swiper = new Swiper(".hero-swiper", {
+var heroSwiper = new Swiper(".hero-swiper", {
     spaceBetween: 30,
     centeredSlides: true,
+    loop: true,
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -83,12 +84,14 @@ var swiper = new Swiper(".hero-swiper", {
 
 // fade
 
-var swiper = new Swiper(".pdt-swiper", {
+var pdtSwiper = new Swiper(".pdt-swiper", {
     spaceBetween: 30,
+    speed: 1000,
     effect: "fade",
+    loop: true,
     navigation: {
-        nextEl: ".pdt-moving-btn .swiper-button-next",
-        prevEl: ".pdt-moving-btn .swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     pagination: {
         el: ".swiper-pagination",
