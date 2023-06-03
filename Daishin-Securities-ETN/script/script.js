@@ -4,11 +4,11 @@ $(".gnb").on("mouseenter", function () {
     $(".gnb li ul").css("height", "300px");
     $(".gnb_bg").css("height", "300px");
     $(".gnb_bg").slideDown();
-    $(".gnb li ul").slideDown(); // 2초에 걸쳐서 진행
+    $(".gnb li ul").slideDown();
 });
 $(".gnb li ul").on("mouseleave", function () {
-    $(".gnb li ul").slideUp(); // 2초에 걸쳐서 진행
-    $(".gnb_bg").slideUp(); // 2초에 걸쳐서 진행
+    $(".gnb li ul").slideUp(); 
+    $(".gnb_bg").slideUp();
 });
 
 // mobile-navigation
@@ -29,7 +29,7 @@ Close.addEventListener("click", () => {
 $(function () {
     $(".family").on("click", function () {
         $(".family span").toggleClass("rotate");
-        $(".family ul").slideToggle(); // 2초에 걸쳐서 진행
+        $(".family ul").slideToggle(); 
     });
 });
 
